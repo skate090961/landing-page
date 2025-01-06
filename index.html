@@ -4,44 +4,42 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
 <body>
 <header class="header">
-    <div class="header__inner container">
-        <a href="/" class="header__logo logo">
-            <img class="header__logo-image" src="public/icons/logo.svg" alt="логотип">
-        </a>
-        <div class="header__menu">
-            <nav class="header__menu-nav">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">
-                            Преимущества
-                        </a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">
-                            Каталог
-                        </a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">
-                            Калькулятор
-                        </a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">
-                            Работы
-                        </a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__button button button--primary">+7 (499) 403-33-62</button>
+    <div class="container">
+        <div class="header__inner">
+            <a href="/" class="header__logo logo">
+                <img class="header__logo-image" src="public/icons/logo.svg" alt="логотип">
+            </a>
+            <div class="header__menu">
+                <nav class="header__menu-nav">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Преимущества
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Работы
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__button button button--primary">+7 (499) 403-33-62</button>
+            </div>
         </div>
     </div>
 </header>
@@ -50,10 +48,10 @@
         <div class="container">
             <div class="hero__inner">
                 <div class="hero__content">
-                    <h1 class="hero__title">Автоматические ворота и роллетные системы в Москве от производителя</h1>
-                    <h2 class="hero__subtitle">Найдёте дешевле — предложим эксклюзивную стоимость и индивидуальное
+                    <h1 class="hero__title content" data-aos="fade-up" data-aos-duration="1200">Автоматические ворота и роллетные системы в Москве от производителя</h1>
+                    <h2 class="hero__subtitle" data-aos="fade-up" data-aos-duration="1400">Найдёте дешевле — предложим эксклюзивную стоимость и индивидуальное
                         решение!</h2>
-                    <div class="hero__controls">
+                    <div class="hero__controls" data-aos="fade-up" data-aos-duration="1600">
                         <button class="hero__button button button--primary">Вызвать замерщика</button>
                         <button class="hero__button button button--outlined">Каталог</button>
                     </div>
@@ -62,51 +60,281 @@
         </div>
     </section>
     <section class="promo">
-        <div class="promo__container container">
-            <div class="promo__items">
-                <div class="promo__item">
-                    <img class="promo__item-image" src="public/images/picture1.png" alt="Картинка 1">
-                    <h4 class="promo__item-title">Ворота бытовые</h4>
-                    <p class="promo__item-text">Гаражные / Распашные / Откатные / Роллеты и роллетные ворота</p>
+        <div class="container">
+            <div class="promo__container">
+                <div class="promo__items">
+                    <div class="promo__item">
+                        <img class="promo__item-image" data-aos="fade-up" data-aos-duration="1200" src="public/images/picture1.png" alt="Картинка 1">
+                        <h4 class="promo__item-title" data-aos="fade-up" data-aos-duration="1400">Ворота бытовые</h4>
+                        <p class="promo__item-text" data-aos="fade-up" data-aos-duration="1600">Гаражные / Распашные / Откатные / Роллеты и роллетные ворота</p>
+                    </div>
+                    <div class="promo__item">
+                        <img class="promo__item-image" data-aos="fade-up" data-aos-duration="1200" src="public/images/picture2.png" alt="Картинка 2">
+                        <h4 class="promo__item-title" data-aos="fade-up" data-aos-duration="1400">Ворота промышленные</h4>
+                        <p class="promo__item-text" data-aos="fade-up" data-aos-duration="1600">Подъемно-секционные / Откатные / Распашные / Скоростные / Для
+                            холодильных камер</p>
+                    </div>
                 </div>
-                <div class="promo__item">
-                    <img class="promo__item-image" src="public/images/picture2.png" alt="Картинка 2">
-                    <h4 class="promo__item-title">Ворота промышленные</h4>
-                    <p class="promo__item-text">Подъемно-секционные / Откатные / Распашные / Скоростные / Для
-                        холодильных камер</p>
+                <div class="promo__progress">
+                    <ul class="promo__progress-list">
+                        <li class="promo__progress-item" data-aos="fade-up" data-aos-duration="500">
+                            <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
+                            <h4 class="promo__progress-title">с 2015</h4>
+                            <p class="promo__progress-text">года на рынке ворот</p>
+                        </li>
+                        <li class="promo__progress-item" data-aos="fade-up" data-aos-duration="1000">
+                            <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
+                            <h4 class="promo__progress-title">5 лет</h4>
+                            <p class="promo__progress-text">Гарантия на автоматику</p>
+                        </li>
+                        <li class="promo__progress-item" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
+                            <h4 class="promo__progress-title">5 мин.</h4>
+                            <p class="promo__progress-text">На расчет стоимости</p>
+                        </li>
+                        <li class="promo__progress-item" data-aos="fade-up" data-aos-duration="2000">
+                            <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
+                            <h4 class="promo__progress-title">1 день</h4>
+                            <p class="promo__progress-text">На полную установку</p>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="promo__progress">
-                <ul class="promo__progress-list">
-                    <li class="promo__progress-item">
-                        <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
-                        <h4 class="promo__progress-title">с 2015</h4>
-                        <p class="promo__progress-text">года на рынке ворот</p>
-                    </li>
-                    <li class="promo__progress-item">
-                        <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
-                        <h4 class="promo__progress-title">5 лет</h4>
-                        <p class="promo__progress-text">Гарантия на автоматику</p>
-                    </li>
-                    <li class="promo__progress-item">
-                        <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
-                        <h4 class="promo__progress-title">5 мин.</h4>
-                        <p class="promo__progress-text">На расчет стоимости</p>
-                    </li>
-                    <li class="promo__progress-item">
-                        <img class="promo__progress-image" src="public/icons/wreath.svg" alt="венок">
-                        <h4 class="promo__progress-title">1 день</h4>
-                        <p class="promo__progress-text">На полную установку</p>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
     <section class="advantages">
-        <div class="advantages__container container">
-            <div class="advantages__title-container">
-                <span class="advantages__title-number">5</span>
-                <p class="advantages__title-text">Преимуществ ворот HELLO</p>
+        <div class="container">
+            <div class="advantages__container">
+                <div class="advantages__title-container">
+                    <span class="advantages__title-number" data-aos="fade-right" data-aos-duration="1000">5</span>
+                    <div class="advantages__title-column" data-aos="fade-left" data-aos-duration="1000">
+                        <p class="advantages__title-text">Преимуществ</p>
+                        <p class="advantages__title-text">ворот HELLO</p>
+                    </div>
+                </div>
+                <ul class="advantages__list">
+                    <li class="advantages__list-item" data-content-id="advantage-1" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="advantages__list-count"><span>1</span></div>
+                        <div class="advantages__list-text"><span>Тёплые</span></div>
+                        <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
+                    </li>
+                    <li class="advantages__list-item" data-content-id="advantage-2" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="advantages__list-count"><span>2</span></div>
+                        <div class="advantages__list-text"><span>Долговечные</span></div>
+                        <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
+                    </li>
+                    <li class="advantages__list-item" data-content-id="advantage-3" data-aos="fade-up" data-aos-duration="1600">
+                        <div class="advantages__list-count"><span>3</span></div>
+                        <div class="advantages__list-text"><span>Безопасные</span></div>
+                        <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
+                    </li>
+                    <li class="advantages__list-item" data-content-id="advantage-4" data-aos="fade-up" data-aos-duration="1800">
+                        <div class="advantages__list-count"><span>4</span></div>
+                        <div class="advantages__list-text"><span>Удобные</span></div>
+                        <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
+                    </li>
+                    <li class="advantages__list-item" data-content-id="advantage-5" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="advantages__list-count"><span>5</span></div>
+                        <div class="advantages__list-text"><span>Красивые</span></div>
+                        <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
+                    </li>
+                </ul>
+                <div id="advantage-1" class="advantages__popup">
+                    <h4 class="advantages__popup-title">Тёплые</h4>
+                    <div class="advantages__popup-header">
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                    </div>
+                    <p class="advantages__popup-text">
+                        TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                </div>
+                <div id="advantage-2" class="advantages__popup">
+                    <h4 class="advantages__popup-title">Тёплые</h4>
+                    <div class="advantages__popup-header">
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture2.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture2.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture2.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                    </div>
+                    <p class="advantages__popup-text">
+                        TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                </div>
+                <div id="advantage-3" class="advantages__popup">
+                    <h4 class="advantages__popup-title">Тёплые</h4>
+                    <div class="advantages__popup-header">
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                    </div>
+                    <p class="advantages__popup-text">
+                        TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                </div>
+                <div id="advantage-4" class="advantages__popup">
+                    <h4 class="advantages__popup-title">Тёплые</h4>
+                    <div class="advantages__popup-header">
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture2.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture2.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture2.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                    </div>
+                    <p class="advantages__popup-text">
+                        TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                </div>
+                <div id="advantage-5" class="advantages__popup">
+                    <h4 class="advantages__popup-title">Тёплые</h4>
+                    <div class="advantages__popup-header">
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                        <div class="advantages__popup-images">
+                            <img src="public/images/picture1.png" alt="#" class="advantages__popup-image">
+                            <p>textexxtext</p>
+                        </div>
+                    </div>
+                    <p class="advantages__popup-text">
+                        TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                </div>
+            </div>
+        </div>
+        <img class="advantages__image"
+             src="https://optim.tildacdn.com/tild6331-3232-4533-b633-316231653834/-/resize/830x/-/format/webp/image_2.png"
+             alt="#">
+    </section>
+    <section class="catalog">
+        <section class="container">
+            <h2 class="catalog__title" data-aos="fade-up" data-aos-duration="1000">Каталог</h2>
+            <ul class="catalog__list">
+                <li class="catalog__item" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="public/images/product_1.png" alt="product" class="catalog__item-img">
+                    <h4 class="catalog__item-title">RSD02</h4>
+                    <p class="catalog__item-text">Гаражные ворота серии RSD02 имеют проверенную годами конструкцию.</p>
+                    <button class="catalog__item-button button button--primary">Подробнее</button>
+                </li>
+                <li class="catalog__item" data-aos="fade-up" data-aos-duration="1400">
+                    <img src="public/images/product_2.png" alt="product" class="catalog__item-img">
+                    <h4 class="catalog__item-title">RH58N</h4>
+                    <p class="catalog__item-text">Данная модель, как правило, используется для защиты окон и витрин.</p>
+                    <button class="catalog__item-button button button--primary">Подробнее</button>
+                </li>
+                <li class="catalog__item" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="public/images/product_3.png" alt="product" class="catalog__item-img">
+                    <h4 class="catalog__item-title">ISD01-PARKING</h4>
+                    <p class="catalog__item-text">Секционные ворота серии ISD01-PARKING совмещают в себе лучшие качества секционных и скоростных спиральных ворот.</p>
+                    <button class="catalog__item-button button button--primary">Подробнее</button>
+                </li>
+                <li class="catalog__item" data-aos="fade-up" data-aos-duration="1800">
+                    <img src="public/images/product_4.png" alt="product" class="catalog__item-img">
+                    <h4 class="catalog__item-title">ISD01</h4>
+                    <p class="catalog__item-text">Промышленные секционные ворота серии ISD01 устанавливаются в проемы производственных зданий.</p>
+                    <button class="catalog__item-button button button--primary">Подробнее</button>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__header">
+                <div class="portfolio__header-line"></div>
+                <div class="portfolio__header-container">
+                    <h2 class="portfolio__header-title" data-aos="fade-up" data-aos-duration="1000">Наши работы</h2>
+                </div>
+            </div>
+            <div class="swiper" data-aos="fade-up" data-aos-duration="1400">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="public/images/slide_1.jpg" alt="слайд">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="public/images/slide_2.jpeg" alt="слайд">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="public/images/slide_3.jpeg" alt="слайд">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="public/images/slide_4.jpeg" alt="слайд">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h3 class="contacts__title" data-aos="fade-up" data-aos-duration="1000">Контакты</h3>
+            <div class="contacts__inner">
+                <form action="#" class="form" data-aos="fade-right" data-aos-duration="1400">
+                    <h4 class="form__title">Вызвать замерщика</h4>
+                    <input type="text" placeholder="Имя" class="form__input">
+                    <input type="tel" placeholder="+7 (999) 999-99-99" class="form__input">
+                    <input type="text" placeholder="Комментарий к заявке" class="form__input">
+                    <button class="form__button button button--primary">Отправить заявку</button>
+                </form>
+                <div class="contacts__info" data-aos="fade-left" data-aos-duration="1400">
+                    <div>
+                        <p class="contacts__info-title">Отдел продаж:</p>
+                        <a href="tel:+79999999999" class="contacts__info-link">+7 (999) 999-99-99</a>
+                    </div>
+                    <div>
+                        <p class="contacts__info-title">Почта:</p>
+                        <a href="mailto:sales@doorhan-moskva.ru" class="contacts__info-link">sales@doorhan-moskva.ru</a>
+                    </div>
+                    <div>
+                        <p class="contacts__info-title">Адрес:</p>
+                        <a target="_blank"
+                           href="https://yandex.ru/maps/213/moscow/house/volokolamskoye_shosse_89/Z04YcgZgTEABQFtvfXRzeHxlYw==/?ll=37.410555%2C55.829067&z=16"
+                           class="contacts__info-link">125371,
+                            г. Москва, Волоколамское шоссе, д. 89, БЦ В89, офис 218</a>
+                    </div>
+                    <div>
+                        <p class="contacts__info-title">Время работы офиса:</p>
+                        <a target="_blank"
+                           href="https://yandex.ru/maps/213/moscow/house/volokolamskoye_shosse_89/Z04YcgZgTEABQFtvfXRzeHxlYw==/?ll=37.410555%2C55.829067&z=16"
+                           class="contacts__info-link">ПН-ПТ
+                            9:00-18:00</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
