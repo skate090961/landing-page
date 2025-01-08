@@ -73,3 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.querySelector('.advantages__mobile-details-button').addEventListener('click', function() {
+    const hiddenText = document.querySelector('.advantages__mobile-details-text');
+    const svg = document.querySelector('.advantages__mobile-details-plus');
+    hiddenText.classList.toggle('hidden');
+    svg.classList.toggle('rotated');
+});
