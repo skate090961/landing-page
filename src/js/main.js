@@ -55,3 +55,21 @@ elements.forEach(element => {
         popup.classList.remove('advantages__popup-show');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector('.header__burger-button');
+    const menu = document.querySelector('.header__burger-menu');
+    const menuItems = document.querySelectorAll('.header__burger-list');
+
+    // Функция для открытия и закрытия меню
+    burger.addEventListener('click', function() {
+        menu.classList.toggle('hidden');
+    });
+
+    // Закрытие меню при выборе ссылки
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            menu.classList.add('hidden');
+        });
+    });
+});
