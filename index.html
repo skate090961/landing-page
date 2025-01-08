@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
 </head>
 <body>
 <header class="header">
@@ -17,22 +17,22 @@
                 <nav class="header__menu-nav">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">
+                            <a href="#advantages" class="header__menu-link">
                                 Преимущества
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">
+                            <a href="#catalog" class="header__menu-link">
                                 Каталог
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">
+                            <a href="#portfolio" class="header__menu-link">
                                 Работы
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="/" class="header__menu-link">
+                            <a href="#contacts" class="header__menu-link">
                                 Контакты
                             </a>
                         </li>
@@ -40,6 +40,11 @@
                 </nav>
                 <button class="header__button button button--primary">+7 (499) 403-33-62</button>
             </div>
+            <button class="header__burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </div>
 </header>
@@ -48,8 +53,10 @@
         <div class="container">
             <div class="hero__inner">
                 <div class="hero__content">
-                    <h1 class="hero__title content" data-aos="fade-up" data-aos-duration="1200">Автоматические ворота и роллетные системы в Москве от производителя</h1>
-                    <h2 class="hero__subtitle" data-aos="fade-up" data-aos-duration="1400">Найдёте дешевле — предложим эксклюзивную стоимость и индивидуальное
+                    <h1 class="hero__title content" data-aos="fade-up" data-aos-duration="1200">Автоматические ворота и
+                        роллетные системы в Москве от производителя</h1>
+                    <h2 class="hero__subtitle" data-aos="fade-up" data-aos-duration="1400">Найдёте дешевле — предложим
+                        эксклюзивную стоимость и индивидуальное
                         решение!</h2>
                     <div class="hero__controls" data-aos="fade-up" data-aos-duration="1600">
                         <button class="hero__button button button--primary">Вызвать замерщика</button>
@@ -64,14 +71,19 @@
             <div class="promo__container">
                 <div class="promo__items">
                     <div class="promo__item">
-                        <img class="promo__item-image" data-aos="fade-up" data-aos-duration="1200" src="public/images/picture1.png" alt="Картинка 1">
+                        <img class="promo__item-image" data-aos="fade-up" data-aos-duration="1200"
+                             src="public/images/picture1.png" alt="Картинка 1">
                         <h4 class="promo__item-title" data-aos="fade-up" data-aos-duration="1400">Ворота бытовые</h4>
-                        <p class="promo__item-text" data-aos="fade-up" data-aos-duration="1600">Гаражные / Распашные / Откатные / Роллеты и роллетные ворота</p>
+                        <p class="promo__item-text" data-aos="fade-up" data-aos-duration="1600">Гаражные / Распашные /
+                            Откатные / Роллеты и роллетные ворота</p>
                     </div>
                     <div class="promo__item">
-                        <img class="promo__item-image" data-aos="fade-up" data-aos-duration="1200" src="public/images/picture2.png" alt="Картинка 2">
-                        <h4 class="promo__item-title" data-aos="fade-up" data-aos-duration="1400">Ворота промышленные</h4>
-                        <p class="promo__item-text" data-aos="fade-up" data-aos-duration="1600">Подъемно-секционные / Откатные / Распашные / Скоростные / Для
+                        <img class="promo__item-image" data-aos="fade-up" data-aos-duration="1200"
+                             src="public/images/picture2.png" alt="Картинка 2">
+                        <h4 class="promo__item-title" data-aos="fade-up" data-aos-duration="1400">Ворота
+                            промышленные</h4>
+                        <p class="promo__item-text" data-aos="fade-up" data-aos-duration="1600">Подъемно-секционные /
+                            Откатные / Распашные / Скоростные / Для
                             холодильных камер</p>
                     </div>
                 </div>
@@ -102,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="container">
             <div class="advantages__container">
                 <div class="advantages__title-container">
@@ -113,27 +125,32 @@
                     </div>
                 </div>
                 <ul class="advantages__list">
-                    <li class="advantages__list-item" data-content-id="advantage-1" data-aos="fade-up" data-aos-duration="1200">
+                    <li class="advantages__list-item" data-content-id="advantage-1" data-aos="fade-up"
+                        data-aos-duration="1200">
                         <div class="advantages__list-count"><span>1</span></div>
                         <div class="advantages__list-text"><span>Тёплые</span></div>
                         <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
                     </li>
-                    <li class="advantages__list-item" data-content-id="advantage-2" data-aos="fade-up" data-aos-duration="1400">
+                    <li class="advantages__list-item" data-content-id="advantage-2" data-aos="fade-up"
+                        data-aos-duration="1400">
                         <div class="advantages__list-count"><span>2</span></div>
                         <div class="advantages__list-text"><span>Долговечные</span></div>
                         <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
                     </li>
-                    <li class="advantages__list-item" data-content-id="advantage-3" data-aos="fade-up" data-aos-duration="1600">
+                    <li class="advantages__list-item" data-content-id="advantage-3" data-aos="fade-up"
+                        data-aos-duration="1600">
                         <div class="advantages__list-count"><span>3</span></div>
                         <div class="advantages__list-text"><span>Безопасные</span></div>
                         <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
                     </li>
-                    <li class="advantages__list-item" data-content-id="advantage-4" data-aos="fade-up" data-aos-duration="1800">
+                    <li class="advantages__list-item" data-content-id="advantage-4" data-aos="fade-up"
+                        data-aos-duration="1800">
                         <div class="advantages__list-count"><span>4</span></div>
                         <div class="advantages__list-text"><span>Удобные</span></div>
                         <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
                     </li>
-                    <li class="advantages__list-item" data-content-id="advantage-5" data-aos="fade-up" data-aos-duration="2000">
+                    <li class="advantages__list-item" data-content-id="advantage-5" data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div class="advantages__list-count"><span>5</span></div>
                         <div class="advantages__list-text"><span>Красивые</span></div>
                         <img src="public/icons/arrow.svg" alt="стрелка" class="advantages__list-arrow">
@@ -240,7 +257,7 @@
              src="https://optim.tildacdn.com/tild6331-3232-4533-b633-316231653834/-/resize/830x/-/format/webp/image_2.png"
              alt="#">
     </section>
-    <section class="catalog">
+    <section id="catalog" class="catalog">
         <section class="container">
             <h2 class="catalog__title" data-aos="fade-up" data-aos-duration="1000">Каталог</h2>
             <ul class="catalog__list">
@@ -259,19 +276,21 @@
                 <li class="catalog__item" data-aos="fade-up" data-aos-duration="1600">
                     <img src="public/images/product_3.png" alt="product" class="catalog__item-img">
                     <h4 class="catalog__item-title">ISD01-PARKING</h4>
-                    <p class="catalog__item-text">Секционные ворота серии ISD01-PARFKING совмещают в себе лучшие качества секционных и скоростных спиральных ворот.</p>
+                    <p class="catalog__item-text">Секционные ворота серии ISD01-PARFKING совмещают в себе лучшие
+                        качества секционных и скоростных спиральных ворот.</p>
                     <button class="catalog__item-button button button--primary">Подробнее</button>
                 </li>
                 <li class="catalog__item" data-aos="fade-up" data-aos-duration="1800">
                     <img src="public/images/product_4.png" alt="product" class="catalog__item-img">
                     <h4 class="catalog__item-title">ISD01</h4>
-                    <p class="catalog__item-text">Промышленные секционные ворота серии ISD01 устанавливаются в проемы производственных зданий.</p>
+                    <p class="catalog__item-text">Промышленные секционные ворота серии ISD01 устанавливаются в проемы
+                        производственных зданий.</p>
                     <button class="catalog__item-button button button--primary">Подробнее</button>
                 </li>
             </ul>
         </section>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="portfolio__header">
                 <div class="portfolio__header-line"></div>
@@ -300,7 +319,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <h3 class="contacts__title" data-aos="fade-up" data-aos-duration="1000">Контакты</h3>
             <div class="contacts__inner">
