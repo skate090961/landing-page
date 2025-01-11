@@ -74,9 +74,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.querySelector('.advantages__mobile-details-button').addEventListener('click', function() {
-    const hiddenText = document.querySelector('.advantages__mobile-details-text');
-    const svg = document.querySelector('.advantages__mobile-details-plus');
-    hiddenText.classList.toggle('hidden');
-    svg.classList.toggle('rotated');
+const buttons = document.querySelectorAll('.advantages__mobile-details-button');
+
+// Проходимся по каждой кнопке и добавляем событие 'click'
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Находим ближайший родительский элемент с классом '.advantages__mobile-details' и внутри него находим скрытый текст и иконку
+        const parentDetails = this.closest('.advantages__mobile-details');
+        const hiddenText = parentDetails.querySelector('.advantages__mobile-details-text');
+        const svg = parentDetails.querySelector('.advantages__mobile-details-plus');
+
+        // Переключаем классы у скрытого текста и иконки
+        hiddenText.classList.toggle('hidden');
+        svg.classList.toggle('rotated');
+    });
 });
